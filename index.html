@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background: url('images/1000_F_218726143_pmty274nfMofewFkM8EhInvAfzaaNm62.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 0;
+            height: 150px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 280px;
+            max-width: 300px;
+            padding: 15px;
+        }
+        .card img {
+            border-radius: 8px;
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about me">Aaryaman Singh</a>
+        <a href="#University">University of Wisconsin-Madison</a>
+        <a href="#contact">singhaaryaman@gmail.com</a>
+    </nav>
+    <div class="container">
+        <h2>My Technical Interests</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="images/linux-logo-png_seeklogo-300168.png?crop=entropy&fit=crop&w=400&h=200" alt="Interest 1">
+                <h3>Operating Systems</h3>
+                <p>I enjoy learning/working with Linux OS and learning more and developing wwith virtual memory, multithreading, and file systems.</p>
+            </div>
+            <div class="card">
+                <img src="images/logo-guide-logos-1.svg?crop=entropy&fit=crop&w=400&h=200" alt="Interest 2">
+                <h3>Data Engineering</h3>
+                <p>I enjoy learning and developing with Docker, Docker Compose, SQL, Spark, Hadoop, and Kafka to devlop Big Data systems.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Aaryaman Singh. All Rights Reserved.</p>
+        <p>Follow me on:
+            <a href="#" style="color: #3b5998;">Linkedin</a> |
+            <a href="#" style="color: #00aced;">Twitter</a> |
+            <a href="#" style="color: #e4405f;">Instagram</a>
+        </p>
+    </footer>
+</body>
+
+</html>

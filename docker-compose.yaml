@@ -1,0 +1,37 @@
+version: '3'
+# Compose file defining a multi-container application
+services:  
+  # ---------------------------
+  # Service “app1”
+  # ---------------------------
+  app1:  
+    # Build the Docker image using the Dockerfile in the current directory
+    build: .  
+    # Pass environment variables into the container
+    environment:  
+      - APP_NAME=App1    # Sets APP_NAME inside the container to “App1”
+    # Map network ports from host → container
+    ports:  
+      - "3001:3000"      # Host port 3001 forwards to container port 3000
+
+  # ---------------------------
+  # Service “app2”
+  # ---------------------------
+  app2:  
+    # Uses the same build context (current directory) as app1
+    build: .  
+    environment:  
+      - APP_NAME=App2    # Distinguishes this container instance as “App2”
+    ports:  
+      - "3002:3000"      # Host port 3002 forwards to container port 3000
+
+  # ---------------------------
+  # Service “app3”
+  # ---------------------------
+  app3:  
+    # Again, builds from the local Dockerfile
+    build: .  
+    environment:  
+      - APP_NAME=App3    # Environment var labels this instance “App3”
+    ports:  
+      - "3003:3000"      # Host port 3003 forwards to container port 3000
